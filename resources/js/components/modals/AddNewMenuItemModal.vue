@@ -183,7 +183,7 @@ export default {
   methods: {
     getFields() {
       if (this.newItem.fields === undefined || this.newItem.length <= 0) return this.linkType.fields;
-      if (this.update === false) return this.newItem.fields;
+      if (this.update !== false) return this.newItem.fields;
       return this.linkType.fields;
     },
 
